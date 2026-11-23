@@ -1,0 +1,1 @@
+{"name": "QuantQuest", "short_name": "QuantQuest", "start_url": "/", "display": "standalone", "background_color": "#f7f8f4", "theme_color": "#172c2b", "icons": [{"src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}]}

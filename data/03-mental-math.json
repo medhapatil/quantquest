@@ -1,0 +1,152 @@
+[
+  {
+    "id": "03-001",
+    "category": "Mental Math",
+    "subtopic": "Percentages",
+    "difficulty": "beginner",
+    "text": "What is 15% of 240?",
+    "inputType": "numeric",
+    "answer": "36",
+    "hint": "Split 15% into 10% and 5%.",
+    "explanation": "10% is 24 and 5% is 12, so 15% is 36. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "percentages"
+    ]
+  },
+  {
+    "id": "03-002",
+    "category": "Mental Math",
+    "subtopic": "Fractions",
+    "difficulty": "beginner",
+    "text": "Compute 3/4 + 5/8 as a decimal.",
+    "inputType": "numeric",
+    "answer": "1.375",
+    "hint": "Use denominator 8.",
+    "explanation": "3/4=6/8. Adding 5/8 gives 11/8=1.375. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "fractions"
+    ]
+  },
+  {
+    "id": "03-003",
+    "category": "Mental Math",
+    "subtopic": "Multiplication",
+    "difficulty": "intermediate",
+    "text": "Compute 47 × 53.",
+    "inputType": "numeric",
+    "answer": "2491",
+    "hint": "Center around 50.",
+    "explanation": "Use difference of squares: (50−3)(50+3)=2500−9=2491.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "multiplication"
+    ]
+  },
+  {
+    "id": "03-004",
+    "category": "Mental Math",
+    "subtopic": "Percent changes",
+    "difficulty": "intermediate",
+    "text": "A price rises 20% then falls 20%. Starting at 100, what is the final price?",
+    "inputType": "numeric",
+    "answer": "96",
+    "hint": "Multiply growth factors.",
+    "explanation": "After the increase: 100×1.2=120. After the decrease: 120×0.8=96. Percent changes do not cancel.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "percent-changes"
+    ]
+  },
+  {
+    "id": "03-005",
+    "category": "Mental Math",
+    "subtopic": "Division",
+    "difficulty": "beginner",
+    "text": "Compute 875 / 25.",
+    "inputType": "numeric",
+    "answer": "35",
+    "hint": "Multiply numerator and denominator by 4.",
+    "explanation": "25×4=100, so 875/25=(875×4)/100=3500/100=35. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "division"
+    ]
+  },
+  {
+    "id": "03-006",
+    "category": "Mental Math",
+    "subtopic": "Estimation",
+    "difficulty": "intermediate",
+    "text": "Estimate 1.02^5 to three decimal places.",
+    "inputType": "numeric",
+    "answer": "1.104",
+    "hint": "Use the binomial theorem.",
+    "explanation": "Binomial expansion gives 1+5(.02)+10(.02)^2+10(.02)^3+5(.02)^4+(.02)^5 =1.1040808032, rounding to 1.104.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "estimation"
+    ]
+  },
+  {
+    "id": "03-007",
+    "category": "Mental Math",
+    "subtopic": "Squares",
+    "difficulty": "beginner",
+    "text": "Compute 85².",
+    "inputType": "numeric",
+    "answer": "7225",
+    "hint": "Use the ending-in-5 trick.",
+    "explanation": "(80+5)²=6400+800+25=7225. Alternatively, numbers ending in 5: 8×9 followed by 25.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "squares"
+    ]
+  },
+  {
+    "id": "03-008",
+    "category": "Mental Math",
+    "subtopic": "Compounding",
+    "difficulty": "advanced",
+    "text": "What is the value of 100 compounded at 10% annually for 3 years?",
+    "inputType": "numeric",
+    "answer": "133.1",
+    "hint": "Compound multiplicatively.",
+    "explanation": "100×1.1³=100×1.331=133.1. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "compounding"
+    ]
+  },
+  {
+    "id": "03-009",
+    "category": "Mental Math",
+    "subtopic": "Ratios",
+    "difficulty": "intermediate",
+    "text": "A:B = 3:5 and B:C = 2:7. If A=12, what is C?",
+    "inputType": "numeric",
+    "answer": "70",
+    "hint": "Solve for B first.",
+    "explanation": "A=12 means scale factor 4 in A:B, so B=20. B:C=2:7 means C=20×7/2=70.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "ratios"
+    ]
+  },
+  {
+    "id": "03-010",
+    "category": "Mental Math",
+    "subtopic": "Arithmetic series",
+    "difficulty": "advanced",
+    "text": "Compute 1+2+...+99.",
+    "inputType": "numeric",
+    "answer": "4950",
+    "hint": "Use n(n+1)/2.",
+    "explanation": "Pair first and last terms: 99×100/2=4950. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "arithmetic-series"
+    ]
+  }
+]

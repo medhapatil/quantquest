@@ -1,0 +1,15 @@
+[
+  {
+    "id": "01-011",
+    "category": "Probability",
+    "subtopic": "Expected value",
+    "difficulty": "beginner",
+    "text": "A fair coin pays $4 for heads and $0 for tails. What is the expected payout in dollars?",
+    "inputType": "numeric",
+    "answer": "2",
+    "hint": "Multiply each outcome by its probability and add.",
+    "explanation": "There are two equally likely outcomes. Heads contributes (1/2) × $4 = $2, and tails contributes (1/2) × $0 = $0. The expected payout is $2.",
+    "estimatedSeconds": 45,
+    "tags": ["expected-value", "coins"]
+  }
+]

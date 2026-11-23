@@ -1,0 +1,152 @@
+[
+  {
+    "id": "02-001",
+    "category": "Combinatorics",
+    "subtopic": "Permutations",
+    "difficulty": "beginner",
+    "text": "How many ways can 5 distinct books be arranged in a row?",
+    "inputType": "numeric",
+    "answer": "120",
+    "hint": "Use factorials.",
+    "explanation": "There are 5 choices for the first position, then 4, 3, 2, 1. Multiply: 5!=120.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "permutations"
+    ]
+  },
+  {
+    "id": "02-002",
+    "category": "Combinatorics",
+    "subtopic": "Combinations",
+    "difficulty": "beginner",
+    "text": "How many 3-person committees can be chosen from 8 people?",
+    "inputType": "numeric",
+    "answer": "56",
+    "hint": "Choose, do not arrange.",
+    "explanation": "Order does not matter, so C(8,3)=8×7×6/(3×2×1)=56.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "combinations"
+    ]
+  },
+  {
+    "id": "02-003",
+    "category": "Combinatorics",
+    "subtopic": "Counting principle",
+    "difficulty": "beginner",
+    "text": "A menu has 4 mains, 3 sides, and 2 drinks. How many complete meals are possible?",
+    "inputType": "numeric",
+    "answer": "24",
+    "hint": "Multiply independent choices.",
+    "explanation": "Choose one of each independently: 4×3×2=24. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "counting-principle"
+    ]
+  },
+  {
+    "id": "02-004",
+    "category": "Combinatorics",
+    "subtopic": "Inclusion-exclusion",
+    "difficulty": "intermediate",
+    "text": "Among integers 1 through 100, how many are divisible by 2 or 5?",
+    "inputType": "numeric",
+    "answer": "60",
+    "hint": "Subtract the overlap.",
+    "explanation": "Multiples of 2: 50. Multiples of 5: 20. Multiples of 10: 10 counted twice. 50+20−10=60.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "inclusion-exclusion"
+    ]
+  },
+  {
+    "id": "02-005",
+    "category": "Combinatorics",
+    "subtopic": "Arrangements",
+    "difficulty": "intermediate",
+    "text": "How many distinct arrangements of the letters in LEVEL are there?",
+    "inputType": "numeric",
+    "answer": "30",
+    "hint": "Divide out repeated letters.",
+    "explanation": "LEVEL has 5 letters with L repeated twice and E repeated twice. Distinct permutations = 5!/(2!2!)=30.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "arrangements"
+    ]
+  },
+  {
+    "id": "02-006",
+    "category": "Combinatorics",
+    "subtopic": "Stars and bars",
+    "difficulty": "intermediate",
+    "text": "How many nonnegative integer solutions satisfy x+y+z=7?",
+    "inputType": "numeric",
+    "answer": "36",
+    "hint": "Use separators between seven stars.",
+    "explanation": "By stars and bars, choose 2 separator positions among 7+3−1=9: C(9,2)=36.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "stars-and-bars"
+    ]
+  },
+  {
+    "id": "02-007",
+    "category": "Combinatorics",
+    "subtopic": "Derangements",
+    "difficulty": "advanced",
+    "text": "How many permutations of 4 objects leave no object in its original position?",
+    "inputType": "numeric",
+    "answer": "9",
+    "hint": "Use inclusion-exclusion.",
+    "explanation": "Inclusion-exclusion: 4!−C(4,1)3!+C(4,2)2!−C(4,3)1!+C(4,4)0!=24−24+12−4+1=9.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "derangements"
+    ]
+  },
+  {
+    "id": "02-008",
+    "category": "Combinatorics",
+    "subtopic": "Binary strings",
+    "difficulty": "intermediate",
+    "text": "How many binary strings of length 8 contain exactly 3 ones?",
+    "inputType": "numeric",
+    "answer": "56",
+    "hint": "Positions uniquely determine a string.",
+    "explanation": "Choose the 3 positions for ones among 8: C(8,3)=56.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "binary-strings"
+    ]
+  },
+  {
+    "id": "02-009",
+    "category": "Combinatorics",
+    "subtopic": "Circular permutations",
+    "difficulty": "advanced",
+    "text": "How many distinct circular seatings of 6 distinct people are there if rotations count as the same?",
+    "inputType": "numeric",
+    "answer": "120",
+    "hint": "Anchor one person.",
+    "explanation": "Fix one person as an anchor to remove rotational symmetry. Arrange the other five in 5!=120 ways.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "circular-permutations"
+    ]
+  },
+  {
+    "id": "02-010",
+    "category": "Combinatorics",
+    "subtopic": "Restricted arrangements",
+    "difficulty": "advanced",
+    "text": "How many ways can 5 distinct people line up if Alice and Bob must stand together?",
+    "inputType": "numeric",
+    "answer": "48",
+    "hint": "Make the pair one block.",
+    "explanation": "Treat Alice and Bob as a block: 4 objects have 4!=24 orders. The pair has 2 internal orders, giving 48.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "restricted-arrangements"
+    ]
+  }
+]

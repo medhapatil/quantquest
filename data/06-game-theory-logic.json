@@ -1,0 +1,173 @@
+[
+  {
+    "id": "06-001",
+    "category": "Game Theory & Logic",
+    "subtopic": "Dominant strategies",
+    "difficulty": "beginner",
+    "text": "In a two-player game, choosing A gives you payoff 5 against either opponent action; choosing B gives payoff 3 against either action. Which is your dominant choice?",
+    "inputType": "multiple-choice",
+    "answer": "A",
+    "hint": "Compare your payoff in each scenario.",
+    "explanation": "A strictly dominates B because 5>3 regardless of the opponent’s move.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "dominant-strategies"
+    ],
+    "options": [
+      "A",
+      "B",
+      "Neither"
+    ]
+  },
+  {
+    "id": "06-002",
+    "category": "Game Theory & Logic",
+    "subtopic": "Prisoners dilemma",
+    "difficulty": "intermediate",
+    "text": "In a standard prisoners dilemma, each player individually prefers to defect regardless of the other’s action. What is the Nash equilibrium?",
+    "inputType": "multiple-choice",
+    "answer": "Both defect",
+    "hint": "Identify both dominant strategies.",
+    "explanation": "Both defect is a Nash equilibrium because neither player can improve their own payoff by switching unilaterally.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "prisoners-dilemma"
+    ],
+    "options": [
+      "Both cooperate",
+      "Both defect",
+      "One defects",
+      "No equilibrium"
+    ]
+  },
+  {
+    "id": "06-003",
+    "category": "Game Theory & Logic",
+    "subtopic": "Logic",
+    "difficulty": "beginner",
+    "text": "A box contains 3 red and 4 blue balls. What is the minimum number drawn blindly to guarantee two of the same color?",
+    "inputType": "numeric",
+    "answer": "3",
+    "hint": "Consider the worst-case first two draws.",
+    "explanation": "With two colors, the worst case after two draws is one of each. The third must match one, by pigeonhole principle.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "logic"
+    ]
+  },
+  {
+    "id": "06-004",
+    "category": "Game Theory & Logic",
+    "subtopic": "Optimal stopping",
+    "difficulty": "intermediate",
+    "text": "You can take a guaranteed payoff of 6 now or a 50% chance of 16 and 50% chance of 0 later. Risk-neutral: which has higher expected value?",
+    "inputType": "multiple-choice",
+    "answer": "Wait",
+    "hint": "Compare expected values.",
+    "explanation": "Waiting has expected value 0.5×16+0.5×0=8, greater than the guaranteed 6.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "optimal-stopping"
+    ],
+    "options": [
+      "Take 6",
+      "Wait",
+      "Equal"
+    ]
+  },
+  {
+    "id": "06-005",
+    "category": "Game Theory & Logic",
+    "subtopic": "Backward induction",
+    "difficulty": "intermediate",
+    "text": "A game ends in two moves. On the last move, Player B can choose payoff to A of 2 or 7 and prefers the smaller. What payoff will rational Player A anticipate?",
+    "inputType": "numeric",
+    "answer": "2",
+    "hint": "Solve the last move first.",
+    "explanation": "B chooses the option that minimizes A’s payoff: 2. Backward induction starts from B’s final decision.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "backward-induction"
+    ]
+  },
+  {
+    "id": "06-006",
+    "category": "Game Theory & Logic",
+    "subtopic": "Minimax",
+    "difficulty": "advanced",
+    "text": "You choose row; an adversary chooses column. Your payoff matrix is [[3,1],[2,4]]. What is your pure-strategy maximin payoff?",
+    "inputType": "numeric",
+    "answer": "2",
+    "hint": "Find each row minimum.",
+    "explanation": "Row 1 worst payoff=min(3,1)=1; row 2 worst=min(2,4)=2. Maximize the worst case: max(1,2)=2.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "minimax"
+    ]
+  },
+  {
+    "id": "06-007",
+    "category": "Game Theory & Logic",
+    "subtopic": "Truth-tellers",
+    "difficulty": "intermediate",
+    "text": "One of two people always tells the truth and the other always lies. Person A says “We are both liars.” Is A a truth-teller or liar?",
+    "inputType": "multiple-choice",
+    "answer": "Liar",
+    "hint": "Assume A is truthful and test consistency.",
+    "explanation": "A cannot be truthful: if A were truthful, A would be a liar, contradiction. A lies, and the statement is false because the other person tells truth.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "truth-tellers"
+    ],
+    "options": [
+      "Truth-teller",
+      "Liar",
+      "Cannot determine"
+    ]
+  },
+  {
+    "id": "06-008",
+    "category": "Game Theory & Logic",
+    "subtopic": "Sequential decisions",
+    "difficulty": "advanced",
+    "text": "You may roll a fair die once and keep the result or pay 1 to reroll exactly once. If you see a 2, what is the optimal expected net payoff?",
+    "inputType": "numeric",
+    "answer": "2.5",
+    "hint": "Compare keeping with expected reroll minus cost.",
+    "explanation": "Keeping gives 2. Rerolling gives E[die]−1=3.5−1=2.5. Therefore reroll, worth 2.5 net.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "sequential-decisions"
+    ]
+  },
+  {
+    "id": "06-009",
+    "category": "Game Theory & Logic",
+    "subtopic": "Mixed strategies",
+    "difficulty": "advanced",
+    "text": "In matching pennies with symmetric payoffs, what probability should each player assign to Heads in equilibrium?",
+    "inputType": "numeric",
+    "answer": "0.5",
+    "hint": "Make the opponent indifferent.",
+    "explanation": "Each player must make the opponent indifferent between Heads and Tails. Equal randomization at 1/2 prevents exploitation.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "mixed-strategies"
+    ]
+  },
+  {
+    "id": "06-010",
+    "category": "Game Theory & Logic",
+    "subtopic": "Adversarial reasoning",
+    "difficulty": "advanced",
+    "text": "Two players alternate removing 1 or 2 stones from a pile of 7. The player taking the last stone wins. How many stones should the first player take to force a win?",
+    "inputType": "numeric",
+    "answer": "1",
+    "hint": "Leave a multiple of 3.",
+    "explanation": "Losing positions are multiples of 3. From 7, take 1 to leave 6; then respond to opponent taking k with 3−k, always returning a multiple of 3.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "adversarial-reasoning"
+    ]
+  }
+]

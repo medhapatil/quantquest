@@ -1,0 +1,152 @@
+[
+  {
+    "id": "04-001",
+    "category": "Market Making",
+    "subtopic": "Fair value",
+    "difficulty": "beginner",
+    "text": "An asset pays 120 with probability 0.25 and 80 otherwise. What is its expected fair value?",
+    "inputType": "numeric",
+    "answer": "90",
+    "hint": "Weight outcomes by probability.",
+    "explanation": "Expected value =0.25×120+0.75×80=30+60=90. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "fair-value"
+    ]
+  },
+  {
+    "id": "04-002",
+    "category": "Market Making",
+    "subtopic": "Bid-ask spread",
+    "difficulty": "beginner",
+    "text": "You quote bid 99 and ask 101. What is the quoted spread?",
+    "inputType": "numeric",
+    "answer": "2",
+    "hint": "Ask minus bid.",
+    "explanation": "Spread is ask minus bid: 101−99=2. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "bid-ask-spread"
+    ]
+  },
+  {
+    "id": "04-003",
+    "category": "Market Making",
+    "subtopic": "Trading P&L",
+    "difficulty": "beginner",
+    "text": "You buy 7 shares at 48 and sell them at 51, ignoring fees. What is your profit?",
+    "inputType": "numeric",
+    "answer": "21",
+    "hint": "Profit = quantity × price difference.",
+    "explanation": "Profit per share=51−48=3; total 7×3=21. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "trading-p&l"
+    ]
+  },
+  {
+    "id": "04-004",
+    "category": "Market Making",
+    "subtopic": "Inventory risk",
+    "difficulty": "intermediate",
+    "text": "You hold 12 shares. Price falls from 50 to 47. What is your mark-to-market P&L?",
+    "inputType": "numeric",
+    "answer": "-36",
+    "hint": "Mark holdings at the new price.",
+    "explanation": "Per-share change =47−50=−3. Multiply by 12 to obtain −36.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "inventory-risk"
+    ]
+  },
+  {
+    "id": "04-005",
+    "category": "Market Making",
+    "subtopic": "Expected profit",
+    "difficulty": "intermediate",
+    "text": "A trade wins 8 with probability 0.6 and loses 5 otherwise. What is expected profit?",
+    "inputType": "numeric",
+    "answer": "2.8",
+    "hint": "Include the negative outcome.",
+    "explanation": "E[P&L]=0.6×8+0.4×(−5)=4.8−2=2.8. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "expected-profit"
+    ]
+  },
+  {
+    "id": "04-006",
+    "category": "Market Making",
+    "subtopic": "Adverse selection",
+    "difficulty": "advanced",
+    "text": "You sell one share for 102. With probability 0.3 its true value is 110; otherwise its value is 98. What is expected P&L?",
+    "inputType": "numeric",
+    "answer": "0.6",
+    "hint": "Revenue minus expected value.",
+    "explanation": "Expected value=0.3×110+0.7×98=101.4. Your expected sell P&L=102−101.4=0.6.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "adverse-selection"
+    ]
+  },
+  {
+    "id": "04-007",
+    "category": "Market Making",
+    "subtopic": "Position sizing",
+    "difficulty": "intermediate",
+    "text": "A portfolio has 40 shares at 25 and 20 shares at 60. What is its total marked value?",
+    "inputType": "numeric",
+    "answer": "2200",
+    "hint": "Sum position values.",
+    "explanation": "40×25=1000 and 20×60=1200. Total=2200. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "position-sizing"
+    ]
+  },
+  {
+    "id": "04-008",
+    "category": "Market Making",
+    "subtopic": "Break-even",
+    "difficulty": "intermediate",
+    "text": "You buy at 100 and pay a 0.5 fee on purchase and a 0.5 fee on sale. At what sale price do you break even?",
+    "inputType": "numeric",
+    "answer": "101",
+    "hint": "Include both transaction fees.",
+    "explanation": "Total costs =100+0.5+0.5=101, so sale price must be 101.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "break-even"
+    ]
+  },
+  {
+    "id": "04-009",
+    "category": "Market Making",
+    "subtopic": "Spread capture",
+    "difficulty": "advanced",
+    "text": "You buy at bid 49.5 and sell at ask 50.5 for 20 shares. What is gross spread capture?",
+    "inputType": "numeric",
+    "answer": "20",
+    "hint": "Multiply spread by shares.",
+    "explanation": "Each completed round trip captures 50.5−49.5=1. For 20 shares, gross capture=20.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "spread-capture"
+    ]
+  },
+  {
+    "id": "04-010",
+    "category": "Market Making",
+    "subtopic": "Risk-adjusted quoting",
+    "difficulty": "advanced",
+    "text": "You are long 10 shares and your inventory target is zero. If your reservation price shifts downward by 0.2 per excess share from a base fair value of 100, what is the reservation price?",
+    "inputType": "numeric",
+    "answer": "98",
+    "hint": "Long inventory implies a lower quote center.",
+    "explanation": "Inventory adjustment =0.2×10=2. Long inventory lowers reservation price to encourage selling: 100−2=98.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "risk-adjusted-quoting"
+    ]
+  }
+]

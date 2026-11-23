@@ -1,0 +1,152 @@
+[
+  {
+    "id": "05-001",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Dot products",
+    "difficulty": "beginner",
+    "text": "Compute the dot product (2,3)·(4,−1).",
+    "inputType": "numeric",
+    "answer": "5",
+    "hint": "Multiply corresponding components and sum.",
+    "explanation": "2×4+3×(−1)=8−3=5. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "dot-products"
+    ]
+  },
+  {
+    "id": "05-002",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Matrix determinant",
+    "difficulty": "beginner",
+    "text": "What is the determinant of [[3,2],[1,4]]?",
+    "inputType": "numeric",
+    "answer": "10",
+    "hint": "Use ad−bc.",
+    "explanation": "For [[a,b],[c,d]], determinant ad−bc=3×4−2×1=10.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "matrix-determinant"
+    ]
+  },
+  {
+    "id": "05-003",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Vector norms",
+    "difficulty": "beginner",
+    "text": "What is the Euclidean norm of (6,8)?",
+    "inputType": "numeric",
+    "answer": "10",
+    "hint": "Use Pythagoras.",
+    "explanation": "Norm =sqrt(6²+8²)=sqrt(36+64)=10. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "vector-norms"
+    ]
+  },
+  {
+    "id": "05-004",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Means",
+    "difficulty": "beginner",
+    "text": "What is the mean of 2, 4, 9, and 13?",
+    "inputType": "numeric",
+    "answer": "7",
+    "hint": "Sum and divide by count.",
+    "explanation": "Sum=28, divide by 4: mean=7. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "means"
+    ]
+  },
+  {
+    "id": "05-005",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Population variance",
+    "difficulty": "intermediate",
+    "text": "What is the population variance of 1, 3, 5?",
+    "inputType": "numeric",
+    "answer": "2.6666666666666665",
+    "hint": "Divide by n, not n−1.",
+    "explanation": "Mean=3. Squared deviations are 4,0,4. Population variance=(4+0+4)/3=8/3.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "population-variance"
+    ]
+  },
+  {
+    "id": "05-006",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Covariance",
+    "difficulty": "intermediate",
+    "text": "For equally likely paired observations (1,2) and (3,6), what is population covariance?",
+    "inputType": "numeric",
+    "answer": "2",
+    "hint": "Average products of centered values.",
+    "explanation": "Means are x̄=2, ȳ=4. Products of deviations: (−1)(−2)=2 and (1)(2)=2. Average=2.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "covariance"
+    ]
+  },
+  {
+    "id": "05-007",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Regression",
+    "difficulty": "intermediate",
+    "text": "A least-squares line through points (0,1), (1,3), (2,5) has what slope?",
+    "inputType": "numeric",
+    "answer": "2",
+    "hint": "Look for the exact line.",
+    "explanation": "Each unit increase in x increases y by 2; the points lie exactly on y=2x+1. OLS slope=2.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "regression"
+    ]
+  },
+  {
+    "id": "05-008",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Eigenvalues",
+    "difficulty": "advanced",
+    "text": "What is the largest eigenvalue of diagonal matrix diag(3,−2,5)?",
+    "inputType": "numeric",
+    "answer": "5",
+    "hint": "Diagonal entries are eigenvalues.",
+    "explanation": "Eigenvalues of a diagonal matrix are its diagonal entries: 3,−2,5. The largest is 5.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "eigenvalues"
+    ]
+  },
+  {
+    "id": "05-009",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Optimization",
+    "difficulty": "advanced",
+    "text": "At what x does f(x)=x²−6x+11 attain its minimum?",
+    "inputType": "numeric",
+    "answer": "3",
+    "hint": "Complete the square.",
+    "explanation": "Complete the square: f(x)=(x−3)²+2, minimized when x=3. Or set derivative 2x−6=0.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "optimization"
+    ]
+  },
+  {
+    "id": "05-010",
+    "category": "Linear Algebra & Statistics",
+    "subtopic": "Correlation",
+    "difficulty": "advanced",
+    "text": "If Cov(X,Y)=6, Var(X)=9, and Var(Y)=16, what is Corr(X,Y)?",
+    "inputType": "numeric",
+    "answer": "0.5",
+    "hint": "Take square roots of variances.",
+    "explanation": "Correlation =Cov/(σXσY)=6/(3×4)=0.5. This follows directly from the stated counting or arithmetic rule.",
+    "estimatedSeconds": 210,
+    "tags": [
+      "correlation"
+    ]
+  }
+]
