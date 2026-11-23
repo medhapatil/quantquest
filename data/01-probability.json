@@ -148,5 +148,305 @@
     "tags": [
       "independence"
     ]
+  },
+  {
+    "id": "01-011",
+    "category": "Probability",
+    "subtopic": "Coins",
+    "difficulty": "beginner",
+    "text": "Four independent fair coins are flipped. What is the probability of exactly three heads?",
+    "inputType": "numeric",
+    "answer": "0.25",
+    "hint": "Count which flip is tails.",
+    "explanation": "There are 2^4=16 equally likely sequences. Choose the three head positions in C(4,3)=4 ways, giving 4/16=1/4.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "coins"
+    ]
+  },
+  {
+    "id": "01-012",
+    "category": "Probability",
+    "subtopic": "Dice",
+    "difficulty": "intermediate",
+    "text": "Roll two fair dice. What is the probability their product is even?",
+    "inputType": "numeric",
+    "answer": "0.75",
+    "hint": "Use the complement: both dice odd.",
+    "explanation": "A product is odd only when both dice are odd. Each die has 3 odd faces, so P(both odd)=9/36. Thus P(even product)=27/36=3/4.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "dice"
+    ]
+  },
+  {
+    "id": "01-013",
+    "category": "Probability",
+    "subtopic": "Cards",
+    "difficulty": "intermediate",
+    "text": "Draw three cards without replacement from a standard 52-card deck. What is the probability all three cards are hearts?",
+    "inputType": "numeric",
+    "answer": "0.012941176470588235",
+    "hint": "Multiply the conditional probabilities of three hearts.",
+    "explanation": "The probability is (13/52)×(12/51)×(11/50)=1716/132600=11/850.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "cards"
+    ]
+  },
+  {
+    "id": "01-014",
+    "category": "Probability",
+    "subtopic": "Conditional probability",
+    "difficulty": "intermediate",
+    "text": "A fair die is rolled once. Given that the result is even, what is the probability the result exceeds 3?",
+    "inputType": "numeric",
+    "answer": "0.6666666666666666",
+    "hint": "Condition on the three even outcomes.",
+    "explanation": "The even results are {2,4,6}, equally likely under the condition. Of these, 4 and 6 exceed 3, giving probability 2/3.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "conditional-probability"
+    ]
+  },
+  {
+    "id": "01-015",
+    "category": "Probability",
+    "subtopic": "Bayes theorem",
+    "difficulty": "advanced",
+    "text": "One percent of items are defective. A detector flags 95% of defective items and 5% of good items. Given a flag, what is the probability the item is defective?",
+    "inputType": "numeric",
+    "answer": "0.16101694915254236",
+    "hint": "Calculate defective-and-flagged divided by all flagged.",
+    "explanation": "P(defect and flag)=0.01×0.95=0.0095. P(flag)=0.0095+0.99×0.05=0.059. The posterior is 0.0095/0.059=19/118.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "bayes-theorem"
+    ]
+  },
+  {
+    "id": "01-016",
+    "category": "Probability",
+    "subtopic": "Expected value",
+    "difficulty": "beginner",
+    "text": "A lottery ticket pays $12 with probability 1/4 and $0 otherwise. What is the expected gross payout in dollars?",
+    "inputType": "numeric",
+    "answer": "3",
+    "hint": "Multiply payout by its probability.",
+    "explanation": "Expected payout is 12×(1/4)+0×(3/4)=3 dollars. This is gross payout, before any ticket cost.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "expected-value"
+    ]
+  },
+  {
+    "id": "01-017",
+    "category": "Probability",
+    "subtopic": "Variance",
+    "difficulty": "intermediate",
+    "text": "A fair six-sided die is rolled. What is the variance of its face value?",
+    "inputType": "numeric",
+    "answer": "2.9166666666666665",
+    "hint": "Use E[X²] − E[X]².",
+    "explanation": "E[X]=7/2. E[X²]=(1²+2²+3²+4²+5²+6²)/6=91/6. Subtract 49/4 to get 35/12.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "variance"
+    ]
+  },
+  {
+    "id": "01-018",
+    "category": "Probability",
+    "subtopic": "Geometric distribution",
+    "difficulty": "intermediate",
+    "text": "A biased coin shows heads with probability 0.25 on each independent toss. What is the expected number of tosses until the first head?",
+    "inputType": "numeric",
+    "answer": "4",
+    "hint": "Use the mean waiting time 1/p for a geometric variable.",
+    "explanation": "Each independent toss succeeds with probability 1/4. The geometric waiting time, counting the successful toss, has mean 1/(1/4)=4.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "geometric-distribution"
+    ]
+  },
+  {
+    "id": "01-019",
+    "category": "Probability",
+    "subtopic": "Binomial distribution",
+    "difficulty": "intermediate",
+    "text": "A basketball player makes each of four independent shots with probability 3/4. What is the probability of exactly three makes?",
+    "inputType": "numeric",
+    "answer": "0.421875",
+    "hint": "Use C(4,3)p³(1-p).",
+    "explanation": "Choose the one miss in four ways, then multiply (3/4)^3(1/4). The result is 4×27/256=27/64.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "binomial-distribution"
+    ]
+  },
+  {
+    "id": "01-020",
+    "category": "Probability",
+    "subtopic": "Poisson distribution",
+    "difficulty": "advanced",
+    "text": "Calls arrive as a Poisson process at rate 2 per hour. What is the probability of zero calls in 30 minutes?",
+    "inputType": "numeric",
+    "answer": "0.36787944117144233",
+    "hint": "Use P(N=0)=e^(-lambda t).",
+    "explanation": "The expected count in half an hour is 2×0.5=1. For a Poisson(1) count, P(N=0)=e^(-1), approximately 0.367879.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "poisson-distribution"
+    ]
+  },
+  {
+    "id": "01-021",
+    "category": "Probability",
+    "subtopic": "Order statistics",
+    "difficulty": "intermediate",
+    "text": "Two independent uniform random variables on [0,1] are drawn. What is the expected maximum?",
+    "inputType": "numeric",
+    "answer": "0.6666666666666666",
+    "hint": "Integrate the maximum’s CDF.",
+    "explanation": "P(max≤x)=x² for 0≤x≤1, so E[max]=integral from 0 to 1 of (1−x²) dx=1−1/3=2/3.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "order-statistics"
+    ]
+  },
+  {
+    "id": "01-022",
+    "category": "Probability",
+    "subtopic": "Independence",
+    "difficulty": "beginner",
+    "text": "Events A and B are independent with P(A)=0.4 and P(B)=0.3. What is P(A and B)?",
+    "inputType": "numeric",
+    "answer": "0.12",
+    "hint": "Multiply probabilities for independent events.",
+    "explanation": "Independence gives P(A∩B)=P(A)P(B)=0.4×0.3=0.12, which is 3/25.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "independence"
+    ]
+  },
+  {
+    "id": "01-023",
+    "category": "Probability",
+    "subtopic": "Inclusion-exclusion",
+    "difficulty": "intermediate",
+    "text": "In a group, P(A)=0.6, P(B)=0.5, and P(A and B)=0.2. What is P(A or B)?",
+    "inputType": "numeric",
+    "answer": "0.9",
+    "hint": "Add marginal probabilities and subtract overlap.",
+    "explanation": "Inclusion-exclusion says P(A∪B)=0.6+0.5−0.2=0.9. Subtract the overlap once to avoid double counting.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "inclusion-exclusion"
+    ]
+  },
+  {
+    "id": "01-024",
+    "category": "Probability",
+    "subtopic": "Markov chains",
+    "difficulty": "advanced",
+    "text": "A two-state Markov chain switches state with probability 0.2 each step. Starting in state A, what is the probability of being in A after two steps?",
+    "inputType": "numeric",
+    "answer": "0.68",
+    "hint": "Either stay twice or switch twice.",
+    "explanation": "Return to A by staying both times (0.8²=0.64) or switching both times (0.2²=0.04). Total 0.68=17/25.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "markov-chains"
+    ]
+  },
+  {
+    "id": "01-025",
+    "category": "Probability",
+    "subtopic": "Urn models",
+    "difficulty": "intermediate",
+    "text": "A bag contains 5 red and 3 blue balls. Draw two without replacement. What is the probability the colors differ?",
+    "inputType": "numeric",
+    "answer": "0.5357142857142857",
+    "hint": "Count red-blue and blue-red.",
+    "explanation": "P(R then B)=5/8×3/7; P(B then R)=3/8×5/7. Sum 30/56=15/28.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "urn-models"
+    ]
+  },
+  {
+    "id": "01-026",
+    "category": "Probability",
+    "subtopic": "Random walks",
+    "difficulty": "advanced",
+    "text": "A symmetric random walk takes four independent steps of +1 or −1. What is the probability it returns to zero?",
+    "inputType": "numeric",
+    "answer": "0.375",
+    "hint": "Returning requires two steps in each direction.",
+    "explanation": "Exactly two of four steps must be +1. There are C(4,2)=6 such paths out of 2^4=16 equally likely paths, so 6/16=3/8.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "random-walks"
+    ]
+  },
+  {
+    "id": "01-027",
+    "category": "Probability",
+    "subtopic": "Total probability",
+    "difficulty": "intermediate",
+    "text": "A factory uses machine A for 70% of parts (2% defective) and machine B for 30% (5% defective). What is the overall defect probability?",
+    "inputType": "numeric",
+    "answer": "0.029",
+    "hint": "Weight each defect rate by production share.",
+    "explanation": "By total probability, P(defect)=0.7×0.02+0.3×0.05=0.014+0.015=0.029.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "total-probability"
+    ]
+  },
+  {
+    "id": "01-028",
+    "category": "Probability",
+    "subtopic": "Continuous distributions",
+    "difficulty": "advanced",
+    "text": "X is uniform on [2,8]. What is P(X>5)?",
+    "inputType": "numeric",
+    "answer": "0.5",
+    "hint": "Take the favorable interval length divided by total length.",
+    "explanation": "The uniform density is constant on an interval of length 6. The portion above 5 has length 8−5=3, so probability 3/6=1/2.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "continuous-distributions"
+    ]
+  },
+  {
+    "id": "01-029",
+    "category": "Probability",
+    "subtopic": "Covariance",
+    "difficulty": "advanced",
+    "text": "Independent fair coin indicators X and Y equal 1 on heads, 0 on tails. What is Cov(X,Y)?",
+    "inputType": "numeric",
+    "answer": "0",
+    "hint": "Use independence of the two indicators.",
+    "explanation": "Independence implies E[XY]=E[X]E[Y]=1/4. Therefore Cov(X,Y)=1/4−(1/2)(1/2)=0.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "covariance"
+    ]
+  },
+  {
+    "id": "01-030",
+    "category": "Probability",
+    "subtopic": "Stopping times",
+    "difficulty": "advanced",
+    "text": "A fair die is rolled until a 6 appears. What is the probability the first 6 occurs on the third roll?",
+    "inputType": "numeric",
+    "answer": "0.11574074074074074",
+    "hint": "Fail twice, then succeed.",
+    "explanation": "The first two rolls must be non-6 (probability 5/6 each), followed by a 6 (probability 1/6). Multiply to get 25/216.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "stopping-times"
+    ]
   }
 ]

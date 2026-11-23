@@ -148,5 +148,305 @@
     "tags": [
       "risk-adjusted-quoting"
     ]
+  },
+  {
+    "id": "04-011",
+    "category": "Market Making",
+    "subtopic": "Fair value",
+    "difficulty": "beginner",
+    "text": "A security pays $100 with probability 0.3 and $40 otherwise. What is its expected payoff in dollars?",
+    "inputType": "numeric",
+    "answer": "58",
+    "hint": "Compute a probability-weighted average.",
+    "explanation": "Expected payoff=0.3×100+0.7×40=30+28=$58. This is a risk-neutral fair value absent discounting.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "fair-value"
+    ]
+  },
+  {
+    "id": "04-012",
+    "category": "Market Making",
+    "subtopic": "Bid-ask spread",
+    "difficulty": "beginner",
+    "text": "A dealer quotes $99.40 bid and $100.20 ask. What is the quoted spread in dollars?",
+    "inputType": "numeric",
+    "answer": "0.8",
+    "hint": "Ask minus bid.",
+    "explanation": "The quoted spread is $100.20−$99.40=$0.80. It is the difference between buying and selling quotes.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "bid-ask-spread"
+    ]
+  },
+  {
+    "id": "04-013",
+    "category": "Market Making",
+    "subtopic": "Midprice",
+    "difficulty": "beginner",
+    "text": "A stock is quoted $48 bid and $50 ask. What is its midprice?",
+    "inputType": "numeric",
+    "answer": "49",
+    "hint": "Average bid and ask.",
+    "explanation": "Midprice=(48+50)/2=$49. The midpoint is a reference, not a guaranteed executable price.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "midprice"
+    ]
+  },
+  {
+    "id": "04-014",
+    "category": "Market Making",
+    "subtopic": "Spread capture",
+    "difficulty": "intermediate",
+    "text": "A market maker buys 200 shares at $20.10 and later sells all 200 at $20.18. Ignoring fees, what is the profit in dollars?",
+    "inputType": "numeric",
+    "answer": "16",
+    "hint": "Multiply price difference by share count.",
+    "explanation": "Per-share profit is $20.18−$20.10=$0.08. Multiply by 200 shares to get $16.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "spread-capture"
+    ]
+  },
+  {
+    "id": "04-015",
+    "category": "Market Making",
+    "subtopic": "Inventory risk",
+    "difficulty": "intermediate",
+    "text": "A dealer is long 300 shares. The midprice falls $0.40. What is the mark-to-market P&L in dollars?",
+    "inputType": "numeric",
+    "answer": "-120",
+    "hint": "Long positions lose when prices fall.",
+    "explanation": "Mark-to-market change equals shares×price change=300×(−$0.40)=−$120, assuming no trades or other cash flows.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "inventory-risk"
+    ]
+  },
+  {
+    "id": "04-016",
+    "category": "Market Making",
+    "subtopic": "Expected trading profit",
+    "difficulty": "intermediate",
+    "text": "A quote earns $2 if filled by an uninformed trader (probability 0.7) and loses $3 if filled by an informed trader (probability 0.3). What is expected P&L per fill?",
+    "inputType": "numeric",
+    "answer": "0.5",
+    "hint": "Weight gains and losses by their probabilities.",
+    "explanation": "Expected P&L=0.7×2+0.3×(−3)=1.4−0.9=$0.50 per fill.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "expected-trading-profit"
+    ]
+  },
+  {
+    "id": "04-017",
+    "category": "Market Making",
+    "subtopic": "Execution probability",
+    "difficulty": "intermediate",
+    "text": "A posted order earns $0.15 if executed, with a 40% chance of execution, and earns $0 otherwise. What is expected profit per posted order?",
+    "inputType": "numeric",
+    "answer": "0.06",
+    "hint": "Multiply conditional profit by fill probability.",
+    "explanation": "Expected profit=0.4×$0.15+0.6×$0=$0.06 per posted order, ignoring costs.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "execution-probability"
+    ]
+  },
+  {
+    "id": "04-018",
+    "category": "Market Making",
+    "subtopic": "Transaction costs",
+    "difficulty": "intermediate",
+    "text": "A trader buys 100 shares at $10 and sells them at $10.08, paying $2 total fees. What is net P&L in dollars?",
+    "inputType": "numeric",
+    "answer": "6",
+    "hint": "Calculate gross spread profit, then subtract fees.",
+    "explanation": "Gross trading profit=100×($10.08−$10)=$8. Net profit=$8−$2=$6.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "transaction-costs"
+    ]
+  },
+  {
+    "id": "04-019",
+    "category": "Market Making",
+    "subtopic": "Adverse selection",
+    "difficulty": "advanced",
+    "text": "A market maker sells one unit at $101. After the trade, the estimated fair value is $102.50. What is the maker’s mark-to-market P&L in dollars?",
+    "inputType": "numeric",
+    "answer": "-1.5",
+    "hint": "Selling below the new fair value loses money.",
+    "explanation": "The maker sold at $101 and now owes or is short an asset worth $102.50. Mark-to-market P&L=101−102.50=−$1.50.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "adverse-selection"
+    ]
+  },
+  {
+    "id": "04-020",
+    "category": "Market Making",
+    "subtopic": "Position limits",
+    "difficulty": "beginner",
+    "text": "A dealer has a long position of 700 shares and a maximum absolute position of 1,000 shares. How many additional shares can the dealer buy before reaching the limit?",
+    "inputType": "numeric",
+    "answer": "300",
+    "hint": "Subtract current long inventory from the cap.",
+    "explanation": "Maximum additional buy size=1000−700=300 shares. This assumes no other inventory changes.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "position-limits"
+    ]
+  },
+  {
+    "id": "04-021",
+    "category": "Market Making",
+    "subtopic": "Hedging",
+    "difficulty": "intermediate",
+    "text": "A portfolio is long 500 shares with beta 1.2 to an index. How many index-equivalent shares should be shorted to offset its beta exposure, assuming equal per-share notionals?",
+    "inputType": "numeric",
+    "answer": "600",
+    "hint": "Multiply exposure by beta.",
+    "explanation": "Beta-adjusted index exposure is 500×1.2=600 index-equivalent shares. Shorting 600 offsets first-order beta under the equal-notional assumption.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "hedging"
+    ]
+  },
+  {
+    "id": "04-022",
+    "category": "Market Making",
+    "subtopic": "Risk reward",
+    "difficulty": "intermediate",
+    "text": "A strategy wins $4 with probability 0.55 and loses $5 otherwise. What is its expected P&L per trade?",
+    "inputType": "numeric",
+    "answer": "-0.05",
+    "hint": "Compute 0.55×4 − 0.45×5.",
+    "explanation": "Expected P&L=0.55×4−0.45×5=2.20−2.25=−$0.05 per trade.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "risk-reward"
+    ]
+  },
+  {
+    "id": "04-023",
+    "category": "Market Making",
+    "subtopic": "Inventory skew",
+    "difficulty": "advanced",
+    "text": "A dealer values an asset at $100 but subtracts a $0.30 inventory penalty from its reservation price. What is the adjusted reservation price?",
+    "inputType": "numeric",
+    "answer": "99.7",
+    "hint": "Subtract the penalty from fair value.",
+    "explanation": "The adjusted reservation price is $100−$0.30=$99.70. This is a simplified inventory-aware pricing rule.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "inventory-skew"
+    ]
+  },
+  {
+    "id": "04-024",
+    "category": "Market Making",
+    "subtopic": "Order book depth",
+    "difficulty": "intermediate",
+    "text": "A buy market order for 150 shares meets 100 shares offered at $20.00 and 50 at $20.10. What is the volume-weighted average execution price?",
+    "inputType": "numeric",
+    "answer": "20.033333333333335",
+    "hint": "Divide total dollars spent by shares bought.",
+    "explanation": "Total cost=100×20+50×20.10=$3005. Divide by 150 shares to get $20.033333... per share.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "order-book-depth"
+    ]
+  },
+  {
+    "id": "04-025",
+    "category": "Market Making",
+    "subtopic": "Break-even spread",
+    "difficulty": "intermediate",
+    "text": "A market maker expects $0.03 adverse-selection cost and $0.02 fees per round trip. What minimum full spread in dollars breaks even, assuming certain round-trip execution?",
+    "inputType": "numeric",
+    "answer": "0.05",
+    "hint": "Add expected cost components.",
+    "explanation": "To break even the captured full spread must cover $0.03 adverse selection plus $0.02 fees, for $0.05 total.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "break-even-spread"
+    ]
+  },
+  {
+    "id": "04-026",
+    "category": "Market Making",
+    "subtopic": "Expected inventory value",
+    "difficulty": "advanced",
+    "text": "A dealer holds 20 shares of an asset worth $50 with probability 0.6 and $40 otherwise. What is the expected inventory value in dollars?",
+    "inputType": "numeric",
+    "answer": "920",
+    "hint": "First calculate expected price, then multiply by shares.",
+    "explanation": "Expected price=0.6×50+0.4×40=46 dollars. Twenty shares therefore have expected value 20×46=$920.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "expected-inventory-value"
+    ]
+  },
+  {
+    "id": "04-027",
+    "category": "Market Making",
+    "subtopic": "Spread in basis points",
+    "difficulty": "intermediate",
+    "text": "A stock has a $0.05 bid-ask spread and a $25 midprice. How many basis points is the full spread?",
+    "inputType": "numeric",
+    "answer": "20",
+    "hint": "Divide spread by midprice and multiply by 10,000.",
+    "explanation": "Relative spread=0.05/25=0.002. Multiply by 10,000 basis points per unit to get 20 bps.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "spread-in-basis-points"
+    ]
+  },
+  {
+    "id": "04-028",
+    "category": "Market Making",
+    "subtopic": "Portfolio P&L",
+    "difficulty": "intermediate",
+    "text": "A dealer is long 100 shares of A and short 50 shares of B. A rises $2 and B rises $1. What is total P&L in dollars?",
+    "inputType": "numeric",
+    "answer": "150",
+    "hint": "Long exposure benefits from gains; short exposure loses.",
+    "explanation": "Long A contributes 100×2=$200. Short B contributes −50×1=−$50. Total P&L=$150.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "portfolio-p&l"
+    ]
+  },
+  {
+    "id": "04-029",
+    "category": "Market Making",
+    "subtopic": "Conditional fill value",
+    "difficulty": "advanced",
+    "text": "A maker quotes a bid at $99. If filled, the asset’s expected subsequent value is $98.70. What is expected mark-to-market P&L per filled unit?",
+    "inputType": "numeric",
+    "answer": "-0.3",
+    "hint": "Expected resale value minus purchase price.",
+    "explanation": "The maker pays $99 and expects the asset to be worth $98.70 after the fill. Expected P&L=98.70−99=−$0.30.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "conditional-fill-value"
+    ]
+  },
+  {
+    "id": "04-030",
+    "category": "Market Making",
+    "subtopic": "Optimal quote comparison",
+    "difficulty": "advanced",
+    "text": "Quote A yields $0.12 per fill with 50% fill probability; quote B yields $0.20 per fill with 20% probability. What is the expected profit advantage of A over B per quote?",
+    "inputType": "numeric",
+    "answer": "0.02",
+    "hint": "Compare probability times payoff for each quote.",
+    "explanation": "Expected profit A=0.5×0.12=$0.06; B=0.2×0.20=$0.04. Advantage A−B=$0.02 per quote.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "optimal-quote-comparison"
+    ]
   }
 ]

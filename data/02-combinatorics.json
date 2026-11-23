@@ -148,5 +148,305 @@
     "tags": [
       "restricted-arrangements"
     ]
+  },
+  {
+    "id": "02-011",
+    "category": "Combinatorics",
+    "subtopic": "Permutations",
+    "difficulty": "beginner",
+    "text": "How many different ways can a gold, silver, and bronze medal be awarded among 9 competitors, with no competitor receiving two medals?",
+    "inputType": "numeric",
+    "answer": "504",
+    "hint": "Choose an ordered first-, second-, and third-place finisher.",
+    "explanation": "There are 9 choices for gold, then 8 for silver, then 7 for bronze. The ordered award count is 9×8×7=504.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "permutations"
+    ]
+  },
+  {
+    "id": "02-012",
+    "category": "Combinatorics",
+    "subtopic": "Combinations",
+    "difficulty": "beginner",
+    "text": "How many committees of three can be selected from eight distinct people?",
+    "inputType": "numeric",
+    "answer": "56",
+    "hint": "Order does not matter.",
+    "explanation": "Use C(8,3)=8!/(3!5!)=(8×7×6)/(3×2×1)=56. This follows directly from the stated quantities.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "combinations"
+    ]
+  },
+  {
+    "id": "02-013",
+    "category": "Combinatorics",
+    "subtopic": "Multiset permutations",
+    "difficulty": "intermediate",
+    "text": "How many distinct arrangements of the letters in BANANA are there?",
+    "inputType": "numeric",
+    "answer": "60",
+    "hint": "Divide 6! by factorials of repeated As and Ns.",
+    "explanation": "BANANA contains three As, two Ns, and one B. The number of distinct permutations is 6!/(3!2!)=720/12=60.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "multiset-permutations"
+    ]
+  },
+  {
+    "id": "02-014",
+    "category": "Combinatorics",
+    "subtopic": "Stars and bars",
+    "difficulty": "intermediate",
+    "text": "How many nonnegative integer solutions satisfy a+b+c+d=5?",
+    "inputType": "numeric",
+    "answer": "56",
+    "hint": "Use stars and bars with four variables.",
+    "explanation": "Distribute five identical units among four nonnegative variables. Stars and bars gives C(5+4−1,4−1)=C(8,3)=56.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "stars-and-bars"
+    ]
+  },
+  {
+    "id": "02-015",
+    "category": "Combinatorics",
+    "subtopic": "Positive compositions",
+    "difficulty": "intermediate",
+    "text": "How many positive integer triples (a,b,c) satisfy a+b+c=10?",
+    "inputType": "numeric",
+    "answer": "36",
+    "hint": "Subtract one from each variable.",
+    "explanation": "Let x=a−1,y=b−1,z=c−1. Then x+y+z=7 with nonnegative variables, giving C(9,2)=36.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "positive-compositions"
+    ]
+  },
+  {
+    "id": "02-016",
+    "category": "Combinatorics",
+    "subtopic": "Inclusion-exclusion",
+    "difficulty": "advanced",
+    "text": "How many integers from 1 to 100 inclusive are divisible by 3 or 5?",
+    "inputType": "numeric",
+    "answer": "47",
+    "hint": "Count multiples of 3 and 5, subtract multiples of 15.",
+    "explanation": "There are floor(100/3)=33 multiples of 3, 20 of 5, and 6 of 15. Union size=33+20−6=47.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "inclusion-exclusion"
+    ]
+  },
+  {
+    "id": "02-017",
+    "category": "Combinatorics",
+    "subtopic": "Binary strings",
+    "difficulty": "intermediate",
+    "text": "How many binary strings of length 10 contain exactly four 1s and start with 0?",
+    "inputType": "numeric",
+    "answer": "126",
+    "hint": "Fix the first bit and choose four positions among the remaining nine.",
+    "explanation": "The first position is fixed as 0. Choose the four 1 positions among the remaining nine places: C(9,4)=126.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "binary-strings"
+    ]
+  },
+  {
+    "id": "02-018",
+    "category": "Combinatorics",
+    "subtopic": "Circular permutations",
+    "difficulty": "intermediate",
+    "text": "How many seatings of six distinct people around a circular table are there, treating rotations as identical?",
+    "inputType": "numeric",
+    "answer": "120",
+    "hint": "Fix one person to remove rotational symmetry.",
+    "explanation": "Fix one person in a reference seat; arrange the other five clockwise in 5!=120 ways. Reflections are distinct.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "circular-permutations"
+    ]
+  },
+  {
+    "id": "02-019",
+    "category": "Combinatorics",
+    "subtopic": "Derangements",
+    "difficulty": "advanced",
+    "text": "How many permutations of four distinct letters leave no letter in its original position?",
+    "inputType": "numeric",
+    "answer": "9",
+    "hint": "Apply inclusion-exclusion to fixed points.",
+    "explanation": "The derangement count is 4!−C(4,1)3!+C(4,2)2!−C(4,3)1!+C(4,4)0!=24−24+12−4+1=9.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "derangements"
+    ]
+  },
+  {
+    "id": "02-020",
+    "category": "Combinatorics",
+    "subtopic": "Lattice paths",
+    "difficulty": "intermediate",
+    "text": "How many shortest grid paths go from (0,0) to (4,3) using only right and up moves?",
+    "inputType": "numeric",
+    "answer": "35",
+    "hint": "Choose positions of three up moves.",
+    "explanation": "Any shortest path has four rights and three ups, seven steps total. Choose the three up positions: C(7,3)=35.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "lattice-paths"
+    ]
+  },
+  {
+    "id": "02-021",
+    "category": "Combinatorics",
+    "subtopic": "Pigeonhole principle",
+    "difficulty": "beginner",
+    "text": "How many socks must be drawn from a drawer with 5 colors to guarantee at least 3 socks of one color?",
+    "inputType": "numeric",
+    "answer": "11",
+    "hint": "In the worst case draw two of each color first.",
+    "explanation": "You can draw at most 2 socks from each of 5 colors without having 3 of any color, for 10 socks. The 11th guarantees a triple.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "pigeonhole-principle"
+    ]
+  },
+  {
+    "id": "02-022",
+    "category": "Combinatorics",
+    "subtopic": "Restricted permutations",
+    "difficulty": "intermediate",
+    "text": "How many arrangements of the letters ABCDE have A and B adjacent?",
+    "inputType": "numeric",
+    "answer": "48",
+    "hint": "Treat AB or BA as a single block.",
+    "explanation": "Make A and B a block. The block plus C,D,E gives 4! arrangements; inside the block there are 2 orders. Total 2×4!=48.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "restricted-permutations"
+    ]
+  },
+  {
+    "id": "02-023",
+    "category": "Combinatorics",
+    "subtopic": "Distributions",
+    "difficulty": "advanced",
+    "text": "How many ways can 6 identical candies be distributed among 3 children if each receives at most 3?",
+    "inputType": "numeric",
+    "answer": "10",
+    "hint": "Count all nonnegative solutions and subtract any child getting 4 or more.",
+    "explanation": "Without caps there are C(8,2)=28 allocations. For any specified child receiving ≥4, subtract 4, leaving 2 candies distributed in C(4,2)=6 ways; three children give 18 invalid allocations. No overlaps are possible. Result 10.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "distributions"
+    ]
+  },
+  {
+    "id": "02-024",
+    "category": "Combinatorics",
+    "subtopic": "Subset counting",
+    "difficulty": "beginner",
+    "text": "How many subsets does a set of seven distinct elements have?",
+    "inputType": "numeric",
+    "answer": "128",
+    "hint": "Each element is either in or out.",
+    "explanation": "Each of the 7 elements has two independent membership choices. Thus 2^7=128 subsets, including the empty set.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "subset-counting"
+    ]
+  },
+  {
+    "id": "02-025",
+    "category": "Combinatorics",
+    "subtopic": "Handshake counting",
+    "difficulty": "beginner",
+    "text": "At a gathering of 12 people, everyone shakes hands once with everyone else. How many handshakes occur?",
+    "inputType": "numeric",
+    "answer": "66",
+    "hint": "Each handshake is an unordered pair.",
+    "explanation": "Choose the two participants: C(12,2)=12×11/2=66. Counting ordered pairs would double count each handshake.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "handshake-counting"
+    ]
+  },
+  {
+    "id": "02-026",
+    "category": "Combinatorics",
+    "subtopic": "Alternating arrangements",
+    "difficulty": "advanced",
+    "text": "How many arrangements of 3 distinct men and 3 distinct women alternate genders in a row?",
+    "inputType": "numeric",
+    "answer": "72",
+    "hint": "Choose starting gender then permute within gender positions.",
+    "explanation": "There are two alternating gender patterns. For each pattern, arrange the three men in 3! ways and the women in 3! ways. Total 2×6×6=72.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "alternating-arrangements"
+    ]
+  },
+  {
+    "id": "02-027",
+    "category": "Combinatorics",
+    "subtopic": "Surjections",
+    "difficulty": "advanced",
+    "text": "How many onto functions are there from a 4-element set to a 2-element set?",
+    "inputType": "numeric",
+    "answer": "14",
+    "hint": "Remove functions that use only one output.",
+    "explanation": "There are 2^4=16 functions total. Exactly two are constant and fail to hit both outputs. Therefore 16−2=14 onto functions.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "surjections"
+    ]
+  },
+  {
+    "id": "02-028",
+    "category": "Combinatorics",
+    "subtopic": "Combinations with exclusions",
+    "difficulty": "intermediate",
+    "text": "How many 4-person teams can be selected from 9 people if two particular people cannot both be selected?",
+    "inputType": "numeric",
+    "answer": "105",
+    "hint": "Subtract teams containing both restricted people.",
+    "explanation": "There are C(9,4)=126 teams. Teams containing both restricted people choose the other two from seven: C(7,2)=21. Result 105.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "combinations-with-exclusions"
+    ]
+  },
+  {
+    "id": "02-029",
+    "category": "Combinatorics",
+    "subtopic": "Digit counting",
+    "difficulty": "intermediate",
+    "text": "How many four-digit numbers have distinct digits and no digit equal to zero?",
+    "inputType": "numeric",
+    "answer": "3024",
+    "hint": "Choose four distinct digits from 1 through 9 in order.",
+    "explanation": "The thousands, hundreds, tens, and ones places have 9,8,7,6 available nonzero digits respectively. Multiply to get 3024.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "digit-counting"
+    ]
+  },
+  {
+    "id": "02-030",
+    "category": "Combinatorics",
+    "subtopic": "Catalan numbers",
+    "difficulty": "advanced",
+    "text": "How many valid sequences of 4 opening and 4 closing parentheses are there?",
+    "inputType": "numeric",
+    "answer": "14",
+    "hint": "Use the fourth Catalan number.",
+    "explanation": "The Catalan number C4=(1/(4+1))×C(8,4)=70/5=14. These count balanced parenthesis sequences.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "catalan-numbers"
+    ]
   }
 ]

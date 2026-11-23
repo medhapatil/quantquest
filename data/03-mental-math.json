@@ -148,5 +148,305 @@
     "tags": [
       "arithmetic-series"
     ]
+  },
+  {
+    "id": "03-011",
+    "category": "Mental Math",
+    "subtopic": "Percentages",
+    "difficulty": "beginner",
+    "text": "What is 17% of 300?",
+    "inputType": "numeric",
+    "answer": "51",
+    "hint": "Find 10%, 5%, and 2%.",
+    "explanation": "10% of 300=30, 5%=15, and 2%=6. Add 30+15+6=51.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "percentages"
+    ]
+  },
+  {
+    "id": "03-012",
+    "category": "Mental Math",
+    "subtopic": "Fractions",
+    "difficulty": "beginner",
+    "text": "Compute 3/8 + 5/12 as a decimal.",
+    "inputType": "numeric",
+    "answer": "0.7916666666666666",
+    "hint": "Use common denominator 24.",
+    "explanation": "3/8=9/24 and 5/12=10/24. Sum=19/24=0.7916666667 approximately.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "fractions"
+    ]
+  },
+  {
+    "id": "03-013",
+    "category": "Mental Math",
+    "subtopic": "Multiplication",
+    "difficulty": "intermediate",
+    "text": "Compute 97 × 103.",
+    "inputType": "numeric",
+    "answer": "9991",
+    "hint": "Use (100−3)(100+3).",
+    "explanation": "Difference of squares: (100−3)(100+3)=10000−9=9991.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "multiplication"
+    ]
+  },
+  {
+    "id": "03-014",
+    "category": "Mental Math",
+    "subtopic": "Squaring",
+    "difficulty": "beginner",
+    "text": "Compute 35 squared.",
+    "inputType": "numeric",
+    "answer": "1225",
+    "hint": "Use (30+5)^2 or the ending-in-five trick.",
+    "explanation": "35²=(30+5)²=900+300+25=1225. This follows directly from the stated quantities.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "squaring"
+    ]
+  },
+  {
+    "id": "03-015",
+    "category": "Mental Math",
+    "subtopic": "Percentage change",
+    "difficulty": "intermediate",
+    "text": "A price rises 20% and then falls 20%. What percentage of the original price remains?",
+    "inputType": "numeric",
+    "answer": "96",
+    "hint": "Multiply the two change factors.",
+    "explanation": "Starting at 100, a 20% rise gives 120; a 20% fall gives 120×0.8=96. Thus 96% of the original remains.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "percentage-change"
+    ]
+  },
+  {
+    "id": "03-016",
+    "category": "Mental Math",
+    "subtopic": "Division",
+    "difficulty": "intermediate",
+    "text": "Compute 864 divided by 24.",
+    "inputType": "numeric",
+    "answer": "36",
+    "hint": "Use 24×(30+6).",
+    "explanation": "24×30=720 and 24×6=144. Together they make 864, so the quotient is 36.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "division"
+    ]
+  },
+  {
+    "id": "03-017",
+    "category": "Mental Math",
+    "subtopic": "Compounding",
+    "difficulty": "intermediate",
+    "text": "An investment grows by 10% per year for two years. What is the total percentage growth?",
+    "inputType": "numeric",
+    "answer": "21",
+    "hint": "Square the growth factor 1.1.",
+    "explanation": "Final value relative to initial is 1.1²=1.21. Subtract 1 to get 0.21, or 21% total growth.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "compounding"
+    ]
+  },
+  {
+    "id": "03-018",
+    "category": "Mental Math",
+    "subtopic": "Estimation",
+    "difficulty": "beginner",
+    "text": "Round 49.8 × 20.2 to the nearest whole number.",
+    "inputType": "numeric",
+    "answer": "1006",
+    "hint": "Use (50−0.2)(20+0.2).",
+    "explanation": "49.8×20.2=1000+10−4−0.04=1005.96. Rounded to the nearest integer this is 1006.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "estimation"
+    ]
+  },
+  {
+    "id": "03-019",
+    "category": "Mental Math",
+    "subtopic": "Ratios",
+    "difficulty": "beginner",
+    "text": "A mixture has red to blue marbles in ratio 3:5 and contains 64 marbles. How many are red?",
+    "inputType": "numeric",
+    "answer": "24",
+    "hint": "There are eight equal ratio parts.",
+    "explanation": "The ratio has 3+5=8 parts. Each part is 64/8=8 marbles, so red marbles=3×8=24.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "ratios"
+    ]
+  },
+  {
+    "id": "03-020",
+    "category": "Mental Math",
+    "subtopic": "Reciprocals",
+    "difficulty": "intermediate",
+    "text": "What is 1 divided by 0.125?",
+    "inputType": "numeric",
+    "answer": "8",
+    "hint": "Recognize 0.125 as one eighth.",
+    "explanation": "Since 0.125=125/1000=1/8, its reciprocal is 8.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "reciprocals"
+    ]
+  },
+  {
+    "id": "03-021",
+    "category": "Mental Math",
+    "subtopic": "Powers",
+    "difficulty": "intermediate",
+    "text": "Compute 2^10 − 3^5.",
+    "inputType": "numeric",
+    "answer": "781",
+    "hint": "Recall 2^10=1024 and 3^5=243.",
+    "explanation": "2^10=1024 and 3^5=243. Their difference is 1024−243=781.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "powers"
+    ]
+  },
+  {
+    "id": "03-022",
+    "category": "Mental Math",
+    "subtopic": "Square roots",
+    "difficulty": "beginner",
+    "text": "Compute the square root of 2025.",
+    "inputType": "numeric",
+    "answer": "45",
+    "hint": "Think of a two-digit number ending in 5.",
+    "explanation": "45²=(40+5)²=1600+400+25=2025, so the positive square root is 45.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "square-roots"
+    ]
+  },
+  {
+    "id": "03-023",
+    "category": "Mental Math",
+    "subtopic": "Speed arithmetic",
+    "difficulty": "intermediate",
+    "text": "Compute 125 × 48.",
+    "inputType": "numeric",
+    "answer": "6000",
+    "hint": "Rewrite 48 as 6×8.",
+    "explanation": "125×48=125×8×6=1000×6=6000. This follows directly from the stated quantities.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "speed-arithmetic"
+    ]
+  },
+  {
+    "id": "03-024",
+    "category": "Mental Math",
+    "subtopic": "Weighted averages",
+    "difficulty": "intermediate",
+    "text": "A class of 20 students averages 80 points and a class of 30 averages 90. What is their combined average?",
+    "inputType": "numeric",
+    "answer": "86",
+    "hint": "Weight each average by its group size.",
+    "explanation": "Total points=20×80+30×90=1600+2700=4300. Divide by 50 students to get 86.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "weighted-averages"
+    ]
+  },
+  {
+    "id": "03-025",
+    "category": "Mental Math",
+    "subtopic": "Modular arithmetic",
+    "difficulty": "advanced",
+    "text": "What is the remainder when 7^4 is divided by 10?",
+    "inputType": "numeric",
+    "answer": "1",
+    "hint": "Track the last-digit cycle of powers of 7.",
+    "explanation": "The last digits of powers of 7 cycle 7,9,3,1. The fourth power therefore ends in 1; 7^4=2401.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "modular-arithmetic"
+    ]
+  },
+  {
+    "id": "03-026",
+    "category": "Mental Math",
+    "subtopic": "Discounts",
+    "difficulty": "beginner",
+    "text": "A $250 item is discounted by 12%. What is the sale price in dollars?",
+    "inputType": "numeric",
+    "answer": "220",
+    "hint": "Compute 10% plus 2% of the original.",
+    "explanation": "12% of 250 is 25+5=30. Subtract the discount from $250 to get $220.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "discounts"
+    ]
+  },
+  {
+    "id": "03-027",
+    "category": "Mental Math",
+    "subtopic": "Algebraic identities",
+    "difficulty": "advanced",
+    "text": "Compute 1002² − 998².",
+    "inputType": "numeric",
+    "answer": "8000",
+    "hint": "Use a²−b²=(a−b)(a+b).",
+    "explanation": "Difference of squares gives (1002−998)(1002+998)=4×2000=8000.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "algebraic-identities"
+    ]
+  },
+  {
+    "id": "03-028",
+    "category": "Mental Math",
+    "subtopic": "Unit rates",
+    "difficulty": "beginner",
+    "text": "A train covers 150 miles in 2.5 hours at constant speed. What is its speed in miles per hour?",
+    "inputType": "numeric",
+    "answer": "60",
+    "hint": "Divide distance by time.",
+    "explanation": "Speed=150/2.5=1500/25=60 miles per hour. This follows directly from the stated quantities.",
+    "estimatedSeconds": 60,
+    "tags": [
+      "unit-rates"
+    ]
+  },
+  {
+    "id": "03-029",
+    "category": "Mental Math",
+    "subtopic": "Fractions of fractions",
+    "difficulty": "intermediate",
+    "text": "Compute two thirds of three quarters as a decimal.",
+    "inputType": "numeric",
+    "answer": "0.5",
+    "hint": "Multiply the two fractions.",
+    "explanation": "(2/3)×(3/4)=6/12=1/2=0.5. This follows directly from the stated quantities.",
+    "estimatedSeconds": 120,
+    "tags": [
+      "fractions-of-fractions"
+    ]
+  },
+  {
+    "id": "03-030",
+    "category": "Mental Math",
+    "subtopic": "Logarithms",
+    "difficulty": "advanced",
+    "text": "If 2^x=128, what is x?",
+    "inputType": "numeric",
+    "answer": "7",
+    "hint": "Recognize a power of two.",
+    "explanation": "2^7=128, so taking base-2 logarithms yields x=log₂(128)=7.",
+    "estimatedSeconds": 180,
+    "tags": [
+      "logarithms"
+    ]
   }
 ]
