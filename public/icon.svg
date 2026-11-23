@@ -1,1 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192"><rect width="192" height="192" rx="42" fill="#172c2b"/><text x="96" y="127" text-anchor="middle" font-size="94" font-family="Arial, sans-serif" font-weight="bold" fill="#c8f0d9">QS</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" role="img" aria-label="QuantSponge sigma icon">
+  <rect width="192" height="192" rx="38" fill="#0d1b32"/>
+  <path d="M48 44H148V65H83L119 96L82 127H148V148H45V132L89 96L48 60Z" fill="#F3F0E8"/>
+</svg>

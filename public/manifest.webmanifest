@@ -3,14 +3,7 @@
   "short_name": "QuantSponge",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f7f8f4",
-  "theme_color": "#172c2b",
-  "icons": [
-    {
-      "src": "/icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
-  ]
+  "background_color": "#111a28",
+  "theme_color": "#111a28",
+  "icons": [{"src":"/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
 }
