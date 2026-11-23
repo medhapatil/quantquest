@@ -1,1 +1,9 @@
-QuantSponge permanent dark blue + cream theme. Replace app/page.tsx, app/globals.css, app/layout.tsx and tailwind.config.js in your repository. This page is based on the previous no-sync fix; keep your latest lib/storage.ts eventId fix and all data files unchanged. Commit and push using GitHub Desktop.
+QuantSponge editorial theme
+
+Replace only app/globals.css in your GitHub repository.
+
+Changes: Newsreader headings, Inter body, permanent blue-charcoal dark mode,
+cream-colored text, flat surfaces, and very subtle borders.
+
+Fonts load from Google Fonts at runtime; offline users will see Georgia and system sans-serif fallbacks.
+No question data, storage, page logic, or layout files are changed.
