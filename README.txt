@@ -1,0 +1,1 @@
+QuantSponge permanent dark blue + cream theme. Replace app/page.tsx, app/globals.css, app/layout.tsx and tailwind.config.js in your repository. This page is based on the previous no-sync fix; keep your latest lib/storage.ts eventId fix and all data files unchanged. Commit and push using GitHub Desktop.

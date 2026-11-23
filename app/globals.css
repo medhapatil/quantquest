@@ -2,12 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-body { background: #f8faf9; color: #182b29; }
-.dark body { background: #101a19; color: #f0f6f3; }
-.panel { @apply rounded-2xl border border-slate-200 bg-white p-5 dark:border-slate-700 dark:bg-slate-800; }
-.btn { @apply rounded-xl bg-ink px-5 py-4 font-semibold text-white disabled:opacity-40 dark:bg-mint dark:text-ink; }
-.secondary { @apply rounded-xl border border-slate-300 px-4 py-3 font-medium dark:border-slate-600; }
+/* Permanent dark theme: midnight blue surfaces and soft ivory typography. */
+:root { color-scheme: dark; }
+html, body { min-height: 100%; background: #111a28; color: #f3f0e8; }
+body { -webkit-font-smoothing: antialiased; }
+.panel { @apply rounded-2xl border p-5; background: #1a2637; border-color: #303e52; color: #f3f0e8; }
+.btn { @apply rounded-xl px-5 py-4 font-semibold disabled:opacity-40; background: #b9cde2; color: #142236; }
+.btn:hover:not(:disabled) { background: #c9d9e9; }
+.secondary { @apply rounded-xl border px-4 py-3 font-medium; border-color: #425269; background: #1a2637; color: #f3f0e8; }
+.secondary:hover:not(:disabled) { background: #233249; }
+/* Harmonize existing Tailwind utility colors without redesigning components. */
+.dark .dark\:bg-slate-800 { background-color: #1a2637; }
+.dark .dark\:bg-slate-700 { background-color: #29384d; }
+.dark .dark\:bg-slate-900\/95 { background-color: rgb(17 26 40 / .96); }
+.dark .dark\:border-slate-700 { border-color: #303e52; }
+.dark .dark\:border-slate-600 { border-color: #425269; }
+.dark .dark\:text-slate-100 { color: #f3f0e8; }
+.dark .dark\:text-slate-300 { color: #c4c7ce; }
+.dark .dark\:text-emerald-300 { color: #b8cde1; }
+.dark .dark\:text-emerald-600 { color: #b8d9c6; }
+.dark .dark\:bg-mint { background-color: #b9cde2; }
+.dark .dark\:text-ink { color: #142236; }
+/* Blue-toned interactive accents and legible cream-on-dark answers. */
+.bg-emerald-500 { background-color: #86abc9; }
+.bg-emerald-100 { background-color: #263b51; }
+.text-emerald-900 { color: #d8e5ed; }
+.border-emerald-600 { border-color: #8bb1d1; }
+.bg-emerald-50 { background-color: #273b52; }
+.text-slate-900 { color: #f3f0e8; }
+.bg-slate-100 { background-color: #253247; }
+.text-slate-800 { color: #e8e6e0; }
+.text-slate-500 { color: #b2b9c5; }
+.bg-amber-50 { background-color: #383323; }
+.bg-amber-100 { background-color: #383323; }
 .prose-math .katex { font-size: 1.03em; }
 button, input, select { -webkit-tap-highlight-color: transparent; }
-button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #059669; outline-offset: 2px; }
+input, select { color-scheme: dark; }
+select, input[type=number], input[type=email] { background-color: #172335; color: #f3f0e8; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #a6c6e2; outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; } }
